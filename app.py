@@ -1,10 +1,15 @@
 from flask import Flask
+from markupsafe import escape
 
 app = Flask(__name__)
 
-@app.route('/soma/<int:a>/<int:b>')
-def soma (a, b):
-    return {"resultado": a + b}
-#http://127.0.0.1:5000/ valor / valor
+@app.route('/')
+def index():
+    return 'Index Page'
+
+@app.route('/Hello')
+def hello (name):
+    return f"Hello, {escape(name)}!"
+
 if __name__ == '__main__':
     app.run(debug=True)
