@@ -5,7 +5,7 @@ Obs:Esse projeto não ira ter data de termino, o projeto será um estudo a fundo
 
 #### TOPICOS 1
  
-- [ ] Determinar plataformas de uso para a API.
+- [X] Determinar plataformas de uso para a API.
 - [ ] Planejar e elaborar a estruturo do API e do site de suporte.
 - [ ] Criar um site para o Download do API e suporte ao cliente.
 - [ ] Construir um portifolio para o site e a API.
