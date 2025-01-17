@@ -10,30 +10,57 @@
 <body>
 
     <header>
-        
-        <h1>Barbearia Elegante</h1>
+        <h1>Corte Real</h1>
         <p>Seu estilo, nossa paixão.</p>
-        
-        <div class="container">
-            <div class="btn">
-            <div class="btn-left"></div>
-            <div class="btn-right"></div> 
-            <ul>
-                <li><a href="#servicos">Serviços</a>
-                <li><a href="#agendamento">Agendamento</a>
-                <li><a href="#contato">Contato</a>
-            </ul>   
-            </div>
-        </div>
+        <nav>
 
+            <!-dd significa dropdown->
+            <ul class="c-dd">
+                
+                <li class="c-dd-item">
+                    <a href="../home/home.html" class="c-dd-link">Home</a>
+                </li>
+
+                <li class="c-dd-item">
+
+                    <span class="c-list-dd-title">Serviço</span>
+
+                    <ul class="dd-submenu">
+
+                        <li class="c-dd-submenu-item">
+                            <a href="#corte"
+                            class="c-dd-submenu-link">Corte de Cabelo</a>
+                        </li>
+                        <li class="c-dd-submenu-item">
+                            <a href="#barba"
+                            class="c-dd-submenu-link">Barba</a>
+                        </li>
+                        <li class="c-dd-submenu-item">
+                            <a href="#tratamentos"
+                            class="c-dd-submenu-link">Tratamentos</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="c-dd-item"">
+                    <a href="login.html" class="c-dd-link">Agendamento</a>
+                </li>
+                <li class="c-dd-item">
+                    <a href="#sobre" class="c-dd-link">Sobre</a>
+                </li>
+                <li class="c-dd-item">
+                    <a href="#contato" class="c-dd-link">Contato</a>
+                </li>
+
+            </ul>
+
+        </nav>   
     </header>
 
     <main>
-
-        <section id="agendamento">
-
+        <section>
             <h2>Agende Seu Horário</h2>
-
             <form id="form-agendamento">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -45,25 +72,20 @@
                 <input type="time" id="hora" name="hora" required>
                 <button type="submit">Agendar</button>
             </form>
-
         </section>
 
         <section id="contato">
-
             <h2>Contato</h2>
             <p>Telefone: (XX) XXXX-XXXX</p>
             <p>Endereço: Rua Exemplo, 123, Centro</p>
-            <p>Email: contato@barbeariaelegante.com</p>
-
+            <p>Email: contato@cortereal.com</p>
         </section>
-
     </main>
 
     <footer>
-        <p>&copy; 2025 Barbearia Elegante</p>
+        <p>&copy; 2025 Corte Real</p>
     </footer>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+    <script src="login.js"></script>
 </body>
 </html>
