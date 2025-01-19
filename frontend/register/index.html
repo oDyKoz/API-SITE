@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corte Real</title>
+    <link rel="shortcut icon" href="../image/Design sem nome.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Corte Real</h1>
+        <p>Seu estilo, nossa paixão.</p>
+        <button class="btn-menu" id="btn-menu">☰ Menu</button>
+    </header>
+
+    <nav class="menu-flutuante" id="menu-flutuante">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="#corte">Corte de Cabelo</a></li>
+            <li><a href="#barba">Barba</a></li>
+            <li><a href="#tratamentos">Tratamentos</a></li>
+            <li><a href="login.html">Agendamento</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Agende Seu Horário</h2>
+            <form id="form-agendamento">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Telefone: (XX) XXXX-XXXX</p>
+            <p>Endereço: Rua Exemplo, 123, Centro</p>
+            <p>Email: contato@cortereal.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Corte Real</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
