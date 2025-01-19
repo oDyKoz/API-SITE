@@ -1,0 +1,214 @@
+/* -------------------- Reset Básico -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* -------------------- Body -------------------- */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* -------------------- Header -------------------- */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #473513;
+    color: black;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    color: #fffb00;
+}
+
+header p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+/* -------------------- Botão de Menu -------------------- */
+.btn-menu {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    background-color: #2e220d;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 1100;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-menu:hover {
+    background-color: #291c05ad;
+    border-radius: 6px;
+}
+
+/* -------------------- Menu Flutuante -------------------- */
+.menu-flutuante {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #291c05;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+}
+
+.menu-flutuante h2 {
+    background-color: #291c05;
+    color: #fffb00;
+    padding: 10px 0 5px;
+}
+
+.menu-flutuante ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-flutuante ul li {
+    margin-bottom: 15px;
+}
+
+.menu-flutuante ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-flutuante ul li a:hover {
+    color: #00ffbf;
+}
+
+/* Menu ativo */
+.menu-flutuante.ativo {
+    transform: translateX(0);
+}
+
+/* Quando o menu está ativo, o botão se move junto */
+.btn-menu.menu-ativo {
+    transform: translateX(250px);
+}
+
+/* -------------------- Apresentação -------------------- */
+.apresentação {
+    display: grid;
+    width: 500px;
+    align-items: start;
+    max-width: min-content 600;
+}
+
+.apresentação h1 {
+    padding: 20px;
+}
+
+.apresentação p {
+    padding: 20px;
+}
+
+/* -------------------- Carrossel -------------------- */
+.container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.carousel {
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transform: all 1s ease-in-out;
+}
+
+.carousel-item img {
+    width: 32%;
+    height: 100%;
+    object-fit: initial;
+}
+
+.carousel-item.active {
+    left: 0;
+}
+
+.carousel-item.previous {
+    left: -100%;
+}
+
+/* Animação do Carrossel */
+@keyframes slide {
+    0%, 100% { left: 100%; }
+    33.33% { left: 0; }
+    66.66% { left: -100%; }
+}
+
+.carousel-item {
+    animation: slide 9s infinite; /* Troca a cada 3 segundos */
+}
+
+.carousel-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel-item:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.carousel-item:nth-child(3) {
+    animation-delay: 6s;
+}
+
+/* -------------------- Main -------------------- */
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+/* -------------------- Section -------------------- */
+section {
+    margin-bottom: 20px;
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+    text-align: center;
+    background-color: #473513;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer #CR {
+    color: #fffb00;
+}
