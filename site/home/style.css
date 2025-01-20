@@ -131,8 +131,8 @@ header p {
 
 /* -------------------- Carrossel -------------------- */
 .container {
-    display: flex;
-    justify-content: end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
 
@@ -192,7 +192,7 @@ header p {
 
 /* -------------------- Main -------------------- */
 main {
-    padding: 20px;
+    padding:0;
     flex: 1;
 }
 
