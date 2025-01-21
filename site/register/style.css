@@ -17,76 +17,62 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #473513;
+    color: black;
 }
 
 header h1 {
     margin-bottom: 5px;
+    color: #fffb00;
 }
 
 header p {
     margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 550;
 }
 
-/* Botão de abrir/fechar o menu */
+/* -------------------- Botão de Menu -------------------- */
 .btn-menu {
     position: fixed;
-    top: 20px;
+    top: 15px;
     left: 20px;
-    background-color: #333;
+    background-color: #2e220d;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 10px;
     cursor: pointer;
     z-index: 1100;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-menu:hover {
-    background-color: #555;
+    background-color: #291c05ad;
+    border-radius: 6px;
 }
 
-/* Menu flutuante */
-/* Suaviza o movimento do menu flutuante */
+/* -------------------- Menu Flutuante -------------------- */
 .menu-flutuante {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: #333;
+    background-color: #291c05;
     color: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
     transform: translateX(-100%);
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Transição mais suave */
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1000;
 }
 
-/* Menu ativo */
-.menu-flutuante.ativo {
-    transform: translateX(0);
-}
-
-/* Suaviza o movimento do botão */
-.btn-menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    z-index: 1100;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Transição suave */
-}
-
-/* Quando o menu está ativo, o botão se move junto */
-.btn-menu.menu-ativo {
-    transform: translateX(250px);
+.menu-flutuante h2 {
+    background-color: #291c05;
+    color: #fffb00;
+    padding: 10px 0 5px;
 }
 
 .menu-flutuante ul {
@@ -109,6 +95,17 @@ header p {
 .menu-flutuante ul li a:hover {
     color: #00ffbf;
 }
+
+/* Menu ativo */
+.menu-flutuante.ativo {
+    transform: translateX(0);
+}
+
+/* Quando o menu está ativo, o botão se move junto */
+.btn-menu.menu-ativo {
+    transform: translateX(250px);
+}
+
 
 /* Main */
 main {
@@ -145,8 +142,12 @@ form button:hover {
 /* Footer */
 footer {
     text-align: center;
-    background-color: #333;
+    background-color: #473513;
     color: #fff;
     padding: 10px 0;
-    margin-top: 20px;
 }
+
+footer #CR {
+    color: #fffb00;
+}
+

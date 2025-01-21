@@ -40,6 +40,17 @@ header p {
     font-weight: 550;
 }
 
+nav section {
+    font-family: "Vidaloka";
+    font-style: normal;
+
+    p {
+        color: black;
+        font-size: 17px;
+        font-weight: 550;
+    }
+}
+
 /* -------------------- Botão de Menu -------------------- */
 .btn-menu {
     position: fixed;
@@ -48,6 +59,7 @@ header p {
     background-color: #2e220d;
     color: white;
     border: none;
+    border-radius: 6px;
     padding: 10px;
     font-size: 10px;
     cursor: pointer;
@@ -74,6 +86,9 @@ header p {
     transform: translateX(-100%);
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1000;
+    font-family: "Vidaloka";
+    font-style: normal;
+
 }
 
 .menu-flutuante h2 {
@@ -100,7 +115,7 @@ header p {
 }
 
 .menu-flutuante ul li a:hover {
-    color: #00ffbf;
+    color: #eeff00;
 }
 
 /* Menu ativo */
@@ -137,6 +152,7 @@ header p {
 }
 
 .carousel {
+    max-width: 500px max-content;
     width: 800px;
     height: 300px;
     overflow: hidden;
