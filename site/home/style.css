@@ -25,30 +25,77 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #473513;
+    background-color: #33221a;
     color: black;
 }
 
 header h1 {
+
+    display: flex;
+    flex-direction: column;
+    font-family: "Vidaloka";
+    font-style: normal;
+    font-size: 90px;
+    font-weight: 700;
     margin-bottom: 5px;
-    color: #fffb00;
+    color: #fbf269;
+}
+
+
+.down-arrow:hover {
+    cursor: pointer;
+}
+
+#spa {
+    padding: 0 0 0 45px;
 }
 
 header p {
     margin-bottom: 20px;
     font-size: 17px;
     font-weight: 550;
+    color: white;
 }
 
-nav section {
+.container-sections {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Vidaloka";
     font-style: normal;
+    background-color: #1a0800;
 
-    p {
-        color: black;
-        font-size: 17px;
-        font-weight: 550;
-    }
+}
+
+.container-sections h1 {
+    
+    font-size: 50px;
+    font-weight: 550;
+}
+
+.container-sections p {
+    color: white;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+/* -------------------- Apresentação -------------------- */
+.apresentação {
+
+    color: #fff;
+    width: 500px;
+    align-items: center;
+    max-width: min-content 600;
+
+}
+
+.apresentação h1 {
+    padding: 20px;
+}
+
+.apresentação p {
+    padding: 20px;
 }
 
 /* -------------------- Botão de Menu -------------------- */
@@ -79,7 +126,7 @@ nav section {
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: #291c05;
+    background-color: #2b1b14;
     color: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -92,7 +139,6 @@ nav section {
 }
 
 .menu-flutuante h2 {
-    background-color: #291c05;
     color: #fffb00;
     padding: 10px 0 5px;
 }
@@ -128,21 +174,6 @@ nav section {
     transform: translateX(250px);
 }
 
-/* -------------------- Apresentação -------------------- */
-.apresentação {
-    display: grid;
-    width: 500px;
-    align-items: start;
-    max-width: min-content 600;
-}
-
-.apresentação h1 {
-    padding: 20px;
-}
-
-.apresentação p {
-    padding: 20px;
-}
 
 /* -------------------- Carrossel -------------------- */
 .container {
@@ -220,7 +251,7 @@ section {
 /* -------------------- Footer -------------------- */
 footer {
     text-align: center;
-    background-color: #473513;
+    background-color: black;
     color: #fff;
     padding: 10px 0;
 }
