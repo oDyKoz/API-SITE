@@ -6,9 +6,9 @@ Obs:Esse projeto não ira ter data de termino, o projeto será um estudo a fundo
 ### 📜 Tópicos 
  
 - [X] Determinar plataformas de uso para a API.
-- [ ] Planejar e elaborar a estruturo do API e do site de suporte.
-- [ ] Criar um site para o Download do API e suporte ao cliente.
-- [ ] Construir um portifolio para o site e a API.
+- [x] Planejar e elaborar a estruturo do API e do site.
+- [ ] Criar um site profissional para utilizar a API.
+- [ ] Deixar visivel o usa da API.
 
 Por enquanto todas as criações e planejamento será postado aqui pelo REAME.md, para está facilitando a divulgação e expor todo o planejamento.
 
