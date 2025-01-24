@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corte Real</title>
-    <link rel="shortcut icon" href="../../image/Design sem nome.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../image/design/Design sem nome.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
     </style>
 </head>
 <body>
+
+    <nav id="navsearch">
+        <div class="search-bar">
+            <button type="button"><img src="../../image/design/search-sort-svgrepo-com.svg" alt=""></button>
+            <input type="text" placeholder="Pesquise o seu corte!">
+        </div>
+    </nav>
+
     <header>
         <p>Seu estilo,</p>
         <h1>
@@ -19,9 +27,9 @@
         </h1>
         <p>Nossa paixão!</p>
 
-        <a class="down-arrow" href="#"><img src="../../image/down-arrow.svg" alt="#"></a>
+        <a class="down-arrow" href="#"><img src="../../image/design/down-arrow.svg" alt="#"></a>
 
-        <button class="btn-menu" id="btn-menu"><img src="../../image/menu.svg" alt="#"></button>
+        <button class="btn-menu" id="btn-menu"><img src="../../image/design/menu.svg" alt="#"></button>
     </header>
 
     <nav class="menu-flutuante" id="menu-flutuante">
@@ -48,27 +56,30 @@
 
         </section>
 
-        <section class="container">
-            <div class="carousel">
-                <div class="carousel-item active">
-            
-                <div class="carousel-item">
-                    <img src="../../image/corte2.jpeg" alt="">
-                </div>
-            
-                <div class="carousel-item">
-                    <img src="../../image/corte3.jpeg" alt="">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../image/corte5.jpeg" alt="">
-                </div>
-            </div>
-        </section>
-    </div>
 
+        <div class="container-carousel">
+            <button class="prev-btn"><img src="../../image/desing/angle-left.svg" alt=""></button>
+            <div class="carousel">
+            
+                <div class="carousel-item">
+                    <img src="../../image/cortes/corte2.jpeg" alt="">
+                </div>
+            
+                <div class="carousel-item">
+                    <img src="../../image/cortes/corte3.jpeg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../image/cortes/corte5.jpeg" alt="">
+                </div>
+
+            </div>
+            <button class="next-btn" ><img src="../../image/desing/angle-right.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="pos-carousel"></div>
 
     <footer>
-        <p>&copy; 2025 <spam id="CR">Corte Real</spam></p>
+        <p>&copy; 2025 <span id="CR">Corte Real</span></p>
     </footer>
 
     <script src="script.js"></script>

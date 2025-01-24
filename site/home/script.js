@@ -12,24 +12,9 @@ btnMenu.addEventListener("click", () => {
 });
 
 
-// -------------------- Carrossel --------------------
+// -------------------- barra de pesquisa ---
 
-// Variáveis para controlar o carrossel
-let currentIndex = 0;
-const items = document.querySelectorAll('.carousel-item'); // Seleciona todos os slides
-const totalItems = items.length;
-
-// Função para mostrar o próximo slide
-function showNextSlide() {
-    // Remove a classe 'active' do slide atual
-    items[currentIndex].classList.remove('active');
-
-    // Avança para o próximo slide (loop circular)
-    currentIndex = (currentIndex + 1) % totalItems;
-
-    // Adiciona a classe 'active' ao novo slide
-    items[currentIndex].classList.add('active');
-}
-
-// Define o intervalo para trocar de slide a cada 3 segundos
-setInterval(showNextSlide, 3000);
+document.getElementById('toggle-search').addEventListener('click', function() {
+    var searchBar = document.querySelector('.search-bar');
+    searchBar.style.display = (searchBar.style.display === 'none' || searchBar.style.display === '') ? 'flex' : 'none';
+});

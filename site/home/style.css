@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 html, body {
@@ -80,6 +80,46 @@ header p {
     font-size: 25px;
     font-weight: 550;
 }
+/* ----------------- Search ----------------------- */
+
+#navsearch {
+
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    
+    top: 0;
+    right: 0;
+    cursor: pointer;
+
+
+}
+
+.search-bar { 
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    background-color: transparent;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    display: none;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size:16px ;
+}
+
+.search-bar img {
+    cursor: pointer;
+}
+
 
 /* -------------------- Apresentação -------------------- */
 .apresentação {
@@ -92,11 +132,12 @@ header p {
 }
 
 .apresentação h1 {
-    padding: 20px;
+    padding: 40px;
+    text-align: center;
 }
 
 .apresentação p {
-    padding: 20px;
+    text-align: center;
 }
 
 /* -------------------- Botão de Menu -------------------- */
@@ -107,7 +148,7 @@ header p {
     background-color: #2e220d;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 10px;
     font-size: 10px;
     cursor: pointer;
@@ -140,7 +181,7 @@ header p {
 }
 
 .menu-flutuante h2 {
-    color: #fffb00;
+    color: #fbf269;
     padding: 10px 0 5px;
 }
 
@@ -162,7 +203,7 @@ header p {
 }
 
 .menu-flutuante ul li a:hover {
-    color: #eeff00;
+    color: #fbf269;
 }
 
 /* Menu ativo */
@@ -177,67 +218,71 @@ header p {
 
 
 /* -------------------- Carrossel -------------------- */
-.container {
-    display: grid;
+.container-carousel {
+
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    height: 100vh;
+    width: 80%;
+
+}
+
+.container-carousel button {
+    background-color: transparent;
 }
 
 .carousel {
-    max-width: 500px max-content;
-    width: 800px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
+
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .carousel-item {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    transform: all 1s ease-in-out;
+
+    min-width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
 
 .carousel-item img {
-    width: 32%;
+    
+    width: auto;
     height: 100%;
     object-fit: initial;
+
 }
 
-.carousel-item.active {
-    left: 0;
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
 }
 
-.carousel-item.previous {
-    left: -100%;
-}
+    .prev-btn {
+        left: 10px;
+    }
 
-/* Animação do Carrossel */
-@keyframes slide {
-    0%, 100% { left: 100%; }
-    33.33% { left: 0; }
-    66.66% { left: -100%; }
-}
-
-.carousel-item {
-    animation: slide 9s infinite; /* Troca a cada 3 segundos */
-}
-
-.carousel-item:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.carousel-item:nth-child(2) {
-    animation-delay: 3s;
-}
-
-.carousel-item:nth-child(3) {
-    animation-delay: 6s;
-}
-
+    .next-btn {
+        right: 10px;
+    }
 /* -------------------- Main -------------------- */
 main {
     padding:0;
