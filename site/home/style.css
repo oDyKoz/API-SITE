@@ -88,7 +88,8 @@ header p {
     position: fixed;
     justify-content: flex-end;
     align-items: center;
-    
+    height: 100vh;
+    padding: 20px;
     top: 0;
     right: 0;
     cursor: pointer;
@@ -100,11 +101,13 @@ header p {
     display: flex;
     align-items: center;
     max-width: 300px;
-    background-color: transparent;
+    background-color: white;
+    border-radius: 20px;
     padding: 5px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     gap: 10px;
     display: none;
+ 
 }
 
 .search-bar input {
@@ -116,7 +119,8 @@ header p {
     font-size:16px ;
 }
 
-.search-bar img {
+#toggle-search img {
+
     cursor: pointer;
 }
 
