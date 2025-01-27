@@ -126,7 +126,7 @@ header p {
 
 
 /* -------------------- Apresentação -------------------- */
-.apresentação {
+.presentation {
 
     color: #fff;
     width: 500px;
@@ -135,12 +135,12 @@ header p {
 
 }
 
-.apresentação h1 {
+.presentation h1 {
     padding: 40px;
     text-align: center;
 }
 
-.apresentação p {
+.presentation p {
     text-align: center;
 }
 
